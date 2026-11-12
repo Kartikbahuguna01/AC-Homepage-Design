@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CoolAirPro – Expert AC Installation, Repair &amp; Maintenance</title>
+  <meta name="description" content="Reliable, energy-efficient air conditioning systems installed by certified professionals. Fast service. Transparent pricing. Satisfaction guaranteed.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Nunito+Sans:wght@600;700;800&family=Poppins:wght@400;500&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Shows the loading screen immediately; a failsafe removes it if scripts never run. -->
+  <script>
+    document.documentElement.classList.add('loading');
+    setTimeout(() => document.documentElement.classList.remove('loading'), 5000);
+  </script>
+</head>
+<body>
+
+<!-- Intro loader (animated by script.js) and scroll-progress bar -->
+<div class="loader" aria-hidden="true">
+  <div class="loader__logo">
+    <img src="images/logo.png" alt="">
+    <span class="loader__bar"><i></i></span>
+  </div>
+</div>
+<div class="progress" aria-hidden="true"></div>
+
+<!-- Reusable SVG symbols -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 26 12"><path d="M0 6h24.5M19.5 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 1.8l3.1 6.5 7 .9-5.2 4.9 1.4 7-6.3-3.5-6.3 3.5 1.4-7L1.9 9.2l7-.9L12 1.8z" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star-o" viewBox="0 0 24 24"><path d="M12 1.8l3.1 6.5 7 .9-5.2 4.9 1.4 7-6.3-3.5-6.3 3.5 1.4-7L1.9 9.2l7-.9L12 1.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.5h4l1.5 4.5-2.3 1.4a11 11 0 0 0 5.4 5.4l1.4-2.3 4.5 1.5v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5.5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M6.5 12.6l3.8 3.8 7.4-8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="top">
+  <div class="container nav__inner">
+    <a href="#top" class="nav__logo" aria-label="CoolAirPro home"><img src="images/logo.png" alt="CoolAirPro – AC Installation & Service"></a>
+    <nav class="nav__links" id="navLinks" aria-label="Main">
+      <a href="#top" class="is-active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:+919794296955" class="btn btn--solid nav__cta nav__cta--mobile"><svg class="ph" aria-hidden="true"><use href="#i-phone"/></svg>Call Now</a>
+    </nav>
+    <a href="tel:+919794296955" class="btn btn--solid nav__cta"><svg class="ph" aria-hidden="true"><use href="#i-phone"/></svg>Call Now</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <h1 class="hero__title">
+      <span>Stay Cool, Stay Comfortable</span>
+      <span>Expert AC Installation on</span>
+      <span class="y">You Can Trust</span>
+    </h1>
+    <p class="hero__text">Reliable, energy-efficient air conditioning systems installed by certified professionals. Fast&nbsp; service. Transparent pricing. Satisfaction guaranteed.</p>
+    <div class="hero__btns">
+      <a href="#contact" class="btn btn--solid btn--hero">Book Installation Today <svg class="arrow"><use href="#i-arrow"/></svg></a>
+      <a href="#contact" class="btn btn--outline btn--hero2">Speak with a Specialist <svg class="arrow"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="hero__proof">
+      <div class="avatars">
+        <img src="images/avatar-1.jpg" alt="Happy customer">
+        <img src="images/avatar-2.jpg" alt="Happy customer">
+        <img src="images/avatar-3.jpg" alt="Happy customer">
+        <img src="images/avatar-4.jpg" alt="Happy customer">
+      </div>
+      <div class="proof__text">
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+        </div>
+        <p>Bringing Comfort to <span data-count>1,000</span>+ Happy Customers</p>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-ind" aria-hidden="true"><span>Scroll</span><i></i></div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="trust" aria-label="Why customers trust us">
+  <div class="trust__inner">
+    <div class="trust__item">
+      <svg class="trust__icon" viewBox="0 0 36 36" aria-hidden="true"><path d="M18 3.6l4.3 9.1 9.9 1.2-7.3 6.9 1.9 9.8L18 25.7l-8.8 4.9 1.9-9.8-7.3-6.9 9.9-1.2L18 3.6z" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/></svg>
+      <span class="trust__div"></span>
+      <span class="trust__text">5-Star Rated</span>
+    </div>
+    <div class="trust__item">
+      <svg class="trust__icon trust__icon--id" viewBox="0 0 36 30" aria-hidden="true"><rect x="2" y="2" width="32" height="26" rx="2.5" fill="none" stroke="#fff" stroke-width="2.2"/><circle cx="12.5" cy="11.5" r="3.4" fill="none" stroke="#fff" stroke-width="2.1"/><path d="M7.2 21.5c.8-3 2.9-4.4 5.3-4.4s4.5 1.4 5.3 4.4" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round"/><path d="M21.5 11h7M21.5 17h7" stroke="#fff" stroke-width="2.1" stroke-linecap="round"/></svg>
+      <span class="trust__div"></span>
+      <span class="trust__text">Licensed &amp; Insured</span>
+    </div>
+    <div class="trust__item">
+      <svg class="trust__icon" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="20" r="12" fill="none" stroke="#fff" stroke-width="2.2"/><path d="M18 13v7.5l4.5 2.5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 9.5C4.2 6.7 6.2 4.6 8.8 3.3M33 9.5c-1.2-2.8-3.2-4.9-5.8-6.2" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>
+      <span class="trust__div"></span>
+      <span class="trust__text">Same-Day Appointments Available</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="head head--loose">
+      <p class="eyebrow">Our Services</p>
+      <h2>Complete Air Conditioning Solutions</h2>
+    </div>
+    <div class="cards cards--4">
+      <article class="card service spot">
+        <div class="service__media">
+          <img src="images/service-installation.jpg" alt="Wall-mounted AC installation" loading="lazy">
+          <span class="service__badge si--install" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg></span>
+        </div>
+        <div class="service__body">
+          <h3>AC Installation</h3>
+          <p>Professional installation for all AC brands.</p>
+          <a href="#contact" class="btn btn--solid btn--block">Learn More <svg class="arrow"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="card service spot">
+        <div class="service__media">
+          <img src="images/service-repair.jpg" alt="Technician repairing an AC" loading="lazy">
+          <span class="service__badge si--repair" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3.5 17.3a1.8 1.8 0 0 0 2.5 2.5l5.8-5.8a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.2-.6-.6-2.2 2.6-2.6z"/></svg></span>
+        </div>
+        <div class="service__body">
+          <h3>AC Repair</h3>
+          <p>Fast and effective AC repair services.</p>
+          <a href="#contact" class="btn btn--solid btn--block">Learn More <svg class="arrow"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="card service spot">
+        <div class="service__media">
+          <img src="images/service-replacement.jpg" alt="Modern AC replacement" loading="lazy">
+          <span class="service__badge si--replace" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 10a8 8 0 0 1 14-3.5L20 8.5M20 4v4.5h-4.5M20 14a8 8 0 0 1-14 3.5L4 15.5M4 20v-4.5h4.5"/></svg></span>
+        </div>
+        <div class="service__body">
+          <h3>AC Replacement</h3>
+          <p>Upgrade to a more efficient AC.</p>
+          <a href="#contact" class="btn btn--solid btn--block">Learn More <svg class="arrow"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="card service spot">
+        <div class="service__media">
+          <img src="images/service-maintenance.jpg" alt="Technician maintaining an outdoor AC unit" loading="lazy">
+          <span class="service__badge si--maint" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/></svg></span>
+        </div>
+        <div class="service__body">
+          <h3>AC Maintenance</h3>
+          <p>Keep your AC in top condition.</p>
+          <a href="#contact" class="btn btn--solid btn--block">Learn More <svg class="arrow"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="section why" id="why">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow">Why Choose Us</p>
+      <h2>Your Comfort Is Our Priority</h2>
+    </div>
+    <div class="why__grid">
+      <div class="why__media">
+        <img class="why__img" src="images/why-choose-us.jpg" alt="Technician servicing an outdoor AC unit" loading="lazy">
+      </div>
+      <div class="why__content">
+        <ul class="ticks">
+          <li><span class="tick"><svg><use href="#i-check"/></svg></span>Certified &amp; Experienced Technicians</li>
+          <li><span class="tick"><svg><use href="#i-check"/></svg></span>Transparent Pricing</li>
+          <li><span class="tick"><svg><use href="#i-check"/></svg></span>Energy-Efficient Solutions</li>
+          <li><span class="tick"><svg><use href="#i-check"/></svg></span>Reliable &amp; On-Time Service</li>
+        </ul>
+        <a href="#services" class="btn btn--solid btn--explore">Explore Our Services <svg class="arrow"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section how" id="how">
+  <div class="container">
+    <div class="head head--loose">
+      <p class="eyebrow eyebrow--sm">How It Works</p>
+      <h2>Your Getting Your AC Installed Is Easy</h2>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <span class="step__circle"><img src="images/step-calendar.png" alt=""></span>
+        <span class="step__num">01</span>
+        <span class="step__label">Book<br>Your Service</span>
+      </li>
+      <li class="step__line" aria-hidden="true"></li>
+      <li class="step">
+        <span class="step__circle"><img src="images/step-support.png" alt=""></span>
+        <span class="step__num">02</span>
+        <span class="step__label">Get a<br>Consultation</span>
+      </li>
+      <li class="step__line" aria-hidden="true"></li>
+      <li class="step">
+        <span class="step__circle"><img src="images/step-wrench.png" alt=""></span>
+        <span class="step__num">03</span>
+        <span class="step__label">Professional<br>Installation</span>
+      </li>
+      <li class="step__line" aria-hidden="true"></li>
+      <li class="step step--done">
+        <span class="step__circle"><img src="images/step-check.png" alt=""></span>
+        <span class="step__num">04</span>
+        <span class="step__label">Enjoy Cool<br>Comfort</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section projects" id="projects">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow">Our Projects</p>
+      <h2>Quality Work. Comfortable Spaces.</h2>
+    </div>
+    <div class="cards cards--4">
+      <article class="card project spot">
+        <div class="project__img"><img src="images/project-bedroom.jpg" alt="AC in a modern bedroom" loading="lazy"><span class="tag">Residential</span></div>
+        <h3>AC Installation for Modern Home</h3>
+      </article>
+      <article class="card project spot">
+        <div class="project__img"><img src="images/project-shop.jpg" alt="AC in a boutique" loading="lazy"><span class="tag">Commercial</span></div>
+        <h3>AC Installation for Modern Shops</h3>
+      </article>
+      <article class="card project spot">
+        <div class="project__img"><img src="images/project-office.jpg" alt="AC units in an office" loading="lazy"><span class="tag">Commercial</span></div>
+        <h3>Office AC Installation</h3>
+      </article>
+      <article class="card project spot">
+        <div class="project__img"><img src="images/project-living.jpg" alt="AC in a living room" loading="lazy"><span class="tag">Residential</span></div>
+        <h3>Premium Home Cooling Solution</h3>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="cta-wrap">
+  <div class="container">
+    <div class="cta">
+      <div class="cta__bg" style="background-image:url('images/cta-banner.jpg')" aria-hidden="true"></div>
+      <div class="cta__text">
+        <h2>Ready to Upgrade Your Comfort?</h2>
+        <p>Get expert guidance and a free quote for your AC installation.</p>
+      </div>
+      <a href="#contact" class="btn btn--white cta__btn">Get Your Free Quote <svg class="arrow"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow">About Us</p>
+      <h2>Experts Who Care About Your Comfort</h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__media">
+        <img class="about__img" src="images/about-team.jpg" alt="The CoolAirPro technician team" loading="lazy">
+        <!-- AC-vent slats that open to reveal the photo -->
+        <div class="louver" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="about__content">
+        <p>At CoolCare, we believe everyone deserves a cool, healthy, and comfortable indoor environment—no matter how hot it gets outside. Founded on the principles of technical precision, upfront pricing, and absolute reliability, we have grown into one of the region’s most trusted HVAC service providers.</p>
+        <a href="#contact" class="btn btn--solid btn--learn">Learn More <svg class="arrow"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow">Testimonials</p>
+      <h2>Trusted by Customers. Proven by Results.</h2>
+    </div>
+    <div class="cards cards--3">
+      <figure class="quote spot">
+        <i class="quote__tri quote__tri--tr"></i><i class="quote__tri quote__tri--bl"></i>
+        <blockquote>CoolCare arrived on time, installed two new ACs without any mess, and carefully explained the energy settings. Professional, fast, and transparent pricing!</blockquote>
+        <figcaption>
+          <div class="rating" aria-label="4 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star-o"/></svg></div>
+          <strong>Sarah Chen</strong>
+          <span>Residential AC Installation</span>
+        </figcaption>
+      </figure>
+      <figure class="quote spot">
+        <i class="quote__tri quote__tri--tr"></i><i class="quote__tri quote__tri--bl"></i>
+        <blockquote>Their seasonal maintenance has kept our power bills low and our units running like new. They do a complete deep clean, not just a quick filter rinse</blockquote>
+        <figcaption>
+          <div class="rating" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <strong>Priya Mehta</strong>
+          <span>Annual AC Maintenance</span>
+        </figcaption>
+      </figure>
+      <figure class="quote spot">
+        <i class="quote__tri quote__tri--tr"></i><i class="quote__tri quote__tri--bl"></i>
+        <blockquote>When our office unit died mid-workday, CoolCare showed up within hours, gave honest repair options, and installed a replacement by the next afternoon. Outstanding service!</blockquote>
+        <figcaption>
+          <div class="rating" aria-label="3 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star-o"/></svg><svg><use href="#i-star-o"/></svg></div>
+          <strong>Amit Verma</strong>
+          <span>Emergency AC Repair</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow">FAQ</p>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq__list">
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false" aria-controls="a1" id="q1"><span class="faq__n">01</span><span class="faq__t">How long does AC installation take?</span><span class="faq__plus" aria-hidden="true"></span></button>
+        <div class="faq__a" id="a1" role="region" aria-labelledby="q1"><p>Most standard split-AC installations are completed in 2–4 hours. Larger or multi-unit commercial jobs may take a full day, and we’ll confirm the timeline during your free consultation.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false" aria-controls="a2" id="q2"><span class="faq__n">02</span><span class="faq__t">Do you offer same-day installation?</span><span class="faq__plus" aria-hidden="true"></span></button>
+        <div class="faq__a" id="a2" role="region" aria-labelledby="q2"><p>Yes. Same-day appointments are available subject to technician availability — call us in the morning and we’ll do our best to get a certified technician to you the same day.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false" aria-controls="a3" id="q3"><span class="faq__n">03</span><span class="faq__t">Do you provide free estimates?</span><span class="faq__plus" aria-hidden="true"></span></button>
+        <div class="faq__a" id="a3" role="region" aria-labelledby="q3"><p>Absolutely. We provide a free, no-obligation quote with transparent pricing before any work begins, so there are never any surprises.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false" aria-controls="a4" id="q4"><span class="faq__n">04</span><span class="faq__t">Which AC brands do you install?</span><span class="faq__plus" aria-hidden="true"></span></button>
+        <div class="faq__a" id="a4" role="region" aria-labelledby="q4"><p>We install and service all major AC brands, and our technicians can recommend the most energy-efficient model for your space and budget.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false" aria-controls="a5" id="q5"><span class="faq__n">05</span><span class="faq__t">Do you provide post-installation support?</span><span class="faq__plus" aria-hidden="true"></span></button>
+        <div class="faq__a" id="a5" role="region" aria-labelledby="q5"><p>Yes. Every installation includes follow-up support, and we offer seasonal maintenance plans to keep your system running efficiently for years.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow">Contact &amp; Booking</p>
+      <h2>Get In Touch</h2>
+    </div>
+    <div class="contact__card">
+      <aside class="contact__info">
+        <h3>Contact Info</h3>
+        <p class="contact__lead">Find our contact details below to connect with us easily.Reach us anytime for inquiries, support, or collaborations. Call, email, or visit our office—we’re here to assist you!</p>
+        <ul class="contact__list">
+          <li><span class="ci"><img src="images/icon-location.png" alt=""></span><div><h4>Our Location</h4><p>123 Comfort Road, New<br>Delhi, 110001</p></div></li>
+          <li><span class="ci"><img src="images/icon-phone.png" alt=""></span><div><h4>Phone Number</h4><p class="nw"><a href="tel:+919794296955">+919794296955</a>, <a href="tel:+917751382969">7751382969</a></p></div></li>
+          <li><span class="ci"><img src="images/icon-email.png" alt=""></span><div><h4>Email Address</h4><p><a href="mailto:infoCoolcare@gmail.com">infoCoolcare@gmail.com</a></p></div></li>
+        </ul>
+      </aside>
+      <div class="contact__form">
+        <h3>Get In Touch</h3>
+        <p class="contact__sub">Have a question or need assistance? Connect with our team today.</p>
+        <form id="contactForm" novalidate>
+          <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>
+          <input type="tel" name="mobile" placeholder="Mobile No" aria-label="Mobile No" required>
+          <div class="select">
+            <select name="service" aria-label="Service Required" required>
+              <option value="" disabled selected hidden>Service Required</option>
+              <option>AC Installation</option>
+              <option>AC Repair</option>
+              <option>AC Replacement</option>
+              <option>AC Maintenance</option>
+            </select>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l9 9 9-9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <textarea name="message" placeholder="Message" aria-label="Message" rows="6"></textarea>
+          <button type="submit" class="btn btn--solid btn--send">Send Message</button>
+          <p class="form__ok" id="formOk" role="status" hidden>Thank you! We’ll get back to you shortly.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="#top"><img src="images/logo-white.png" alt="CoolAirPro"></a>
+        <address>
+          <p class="addr">123 Comfort Road, New Delhi, 110001</p>
+          <p class="contactline">Phone: +91 9794296955, +91 7751382969<br>Email: infoCoolcare@gmail.com</p>
+        </address>
+        <div class="social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 28 28"><rect x="2.5" y="2.5" width="23" height="23" rx="6.5" fill="none" stroke="#fff" stroke-width="1.6"/><circle cx="14" cy="14" r="5.4" fill="none" stroke="#fff" stroke-width="1.6"/><circle cx="20.3" cy="7.7" r="1.2" fill="#fff"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 28 28"><circle cx="14" cy="14" r="11.6" fill="none" stroke="#fff" stroke-width="1.6"/><path d="M15.1 25.4V15.6h3.2l.5-3.5h-3.7V9.9c0-1 .4-1.7 1.8-1.7h1.9V5.1c-.4 0-1.5-.2-2.8-.2-2.7 0-4.4 1.6-4.4 4.6v2.6H8.6v3.5h3.1v9.8" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 28 28"><path d="M25.5 6.2c-.9.5-1.8.8-2.8 1 1-.6 1.8-1.6 2.2-2.8-1 .6-2 1-3.1 1.2a4.9 4.9 0 0 0-8.4 4.5C9.3 10 5.7 8.100 3.300 5.100a4.900 4.900 0 0 0 1.500 6.600c-.8 0-1.500-.2-2.200-.6 0 2.400 1.700 4.400 3.900 4.900-.7.200-1.400.2-2.200.1.600 2 2.400 3.400 4.600 3.400A9.800 9.800 0 0 1 2 21.500a13.800 13.800 0 0 0 7.500 2.200c9 0 14-7.500 14-14v-.6c1-.7 1.800-1.600 2.500-2.600z" fill="none" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 28 28"><rect x="2.5" y="4.5" width="23" height="19" rx="5.5" fill="none" stroke="#fff" stroke-width="1.6"/><path d="M11.500 9.800v8.400l7-4.200-7-4.200z" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul><li><a href="#top">Home</a></li><li><a href="#services">Services</a></li><li><a href="#about">About Us</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div class="footer__col">
+        <h4>Our Services</h4>
+        <ul><li><a href="#services">AC Installation</a></li><li><a href="#services">AC Repair</a></li><li><a href="#services">AC Maintenance</a></li><li><a href="#services">AC Replacement</a></li><li><a href="#services">AC Service</a></li></ul>
+      </div>
+      <div class="footer__col">
+        <h4>Other Links</h4>
+        <ul><li><a href="#reviews">Testimonials</a></li><li><a href="#">Media Presence</a></li><li><a href="#">Career</a></li></ul>
+      </div>
+      <div class="footer__col">
+        <h4>Legal</h4>
+        <ul><li><a href="#contact">Contact</a></li><li><a href="#">Term &amp; Condition</a></li><li><a href="#">Privacy Policy</a></li></ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <span>2026 CoolAir Pro Partner. all rights reserved</span>
+      <nav aria-label="Legal"><a href="#">Privacy Policy</a><a href="#">Terms of Services</a><a href="#">Admin</a></nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Animation libraries (pinned versions). The page still works if these fail to load. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
